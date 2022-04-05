@@ -278,17 +278,46 @@ h6 {
     margin-bottom: 50px;
 }
 
-.activity-card {
+.activity-card-list{
     display: flex;
 }
 
-.activity-card img {
+.activity-card-list img {
     display: block;
 }
 
-.activity-card>li+li {
+.activity-card-list>li+li {
     margin-left: 30px;
 }
+
+.activity-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-card:hover .activity-card-subscription{
+    transform: translateY(0%);
+}
+
+.activity-card-subscription{
+    position: absolute;
+    bottom:0;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--general-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 /* ---------------------team--------------------- */
 
