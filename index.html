@@ -56,7 +56,20 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button-hero" type="button">Заказать услугу</button>
+                <button class="button-hero" type="button" data-modal-open>Заказать услугу</button>
+            </div>
+            <div class="modal-overlay is-hidden" data-modal>
+                <div class="modal-form">
+                    <button class="icon-close" data-modal-close>
+                        <svg>
+                            <use href="./images/symbol-defs-clean.svg#icon-close">
+
+                            </use>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
             </div>
 
         </section>
