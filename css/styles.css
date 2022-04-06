@@ -231,7 +231,14 @@ h6 {
     align-items: center;
     opacity: 1;
     visibility: visible;
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden.modal-overlay{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .modal-form {
@@ -244,6 +251,8 @@ h6 {
     border-radius: 4px;
     
 }
+
+
 
 .icon-close{
     width: 30px;
@@ -266,12 +275,7 @@ h6 {
     width: 11px;
     height: 11px;
 }
-.is-hidden.modal-overlay{
-    /* visibility: hidden; */
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 /* ---------------------advantages--------------------- */
 
